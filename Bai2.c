@@ -1,15 +1,12 @@
 #include <stdio.h>
 
-int main() {
-    int year;
+void kiemTraNamNhuan() {
+    int nam;
+    printf("Nhap nam: ");
+    scanf("%d", &nam);
 
-    printf("Nhap vao nam: ");
-    scanf("%d", &year);
-
-    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
-        printf("Nam %d la nam nhuan.\n", year);
+    if ((nam % 4 == 0 && nam % 100 != 0) || (nam % 400 == 0))
+        printf("%d la nam nhuan\n", nam);
     else
-        printf("Nam %d khong phai la nam nhuan.\n", year);
-
-    return 0;
+        printf("%d khong phai la nam nhuan\n", nam);
 }
