@@ -1,41 +1,41 @@
 run: main.o Bai1.o Bai2.o Bai3.o Bai4.o Bai5.o Bai6.o Bai7.o bai_8.o bai_9.o b10.o b11.o
-    gcc main.o Bai1.o Bai2.o Bai3.o Bai4.o Bai5.o Bai6.o Bai7.o bai_8.o bai_9.o b10.o b11.o -o run
+	 gcc main.o Bai1.o Bai2.o Bai3.o Bai4.o Bai5.o Bai6.o Bai7.o bai_8.o bai_9.o b10.o b11.o -o run -lm
 
 main.o: main.c mylib.h
-    gcc -c main.c
+	 gcc -c main.c
 
 Bai1.o: Bai1.c mylib.h
-    gcc -c Bai1.c
+	 gcc -c Bai1.c
 
 Bai2.o: Bai2.c mylib.h
-    gcc -c Bai2.c
+	 gcc -c Bai2.c
 
 Bai3.o: Bai3.c mylib.h
-    gcc -c Bai3.c
+	 gcc -c Bai3.c
 
 Bai4.o: Bai4.c mylib.h
-    gcc -c Bai4.c
+	 gcc -c Bai4.c
 
 Bai5.o: Bai5.c mylib.h
-    gcc -c Bai5.c
+	 gcc -c Bai5.c
 
 Bai6.o: Bai6.c mylib.h
-    gcc -c Bai6.c
+	 gcc -c Bai6.c
 
 Bai7.o: Bai7.c mylib.h
-    gcc -c Bai7.c
+	 gcc -c Bai7.c
 
 bai_8.o: bai_8.c mylib.h
-    gcc -c bai_8.c
+	 gcc -c bai_8.c
 
 bai_9.o: bai_9.c mylib.h
-    gcc -c bai_9.c
+	 gcc -c bai_9.c
 
 b10.o: b10.c mylib.h
-    gcc -c b10.c
+	 gcc -c b10.c
 
 b11.o: b11.c mylib.h
-    gcc -c b11.c
+	 gcc -c b11.c
 
 clean:
-    rm -f *.o run
+	 rm -f *.o run
