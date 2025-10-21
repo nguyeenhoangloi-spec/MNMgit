@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 void kiemTraNamNhuan(int nam) {
@@ -6,12 +7,4 @@ void kiemTraNamNhuan(int nam) {
     } else {
         printf("Nam %d khong phai la nam nhuan.\n", nam);
     }
-}
-
-int main() {
-    int nam;
-    printf("Nhap nam: ");
-    scanf("%d", &nam);
-    kiemTraNamNhuan(nam);
-    return 0;
 }

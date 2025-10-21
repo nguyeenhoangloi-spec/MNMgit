@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 void hienthi(int x) 
@@ -10,11 +11,4 @@ void hienthi(int x)
         }
         printf("\n");
     }
-}
-
-int main() 
-{
-    int x = 5;
-    hienthi(x);
-    return 0;
 }

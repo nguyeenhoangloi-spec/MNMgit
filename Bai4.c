@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 void xepLoai(float van, float toan, float anh) {
@@ -12,12 +13,4 @@ void xepLoai(float van, float toan, float anh) {
     } else {
         printf("Hoc luc: Gioi\n");
     }
-}
-
-int main() {
-    float van, toan, anh;
-    printf("Nhap diem Van, Toan, Anh: ");
-    scanf("%f%f%f", &van, &toan, &anh);
-    xepLoai(van, toan, anh);
-    return 0;
 }

@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 void yc(int n) 
@@ -10,13 +11,4 @@ void yc(int n)
         for (int k = 0; k < stars; ++k) putchar('*');
         putchar('\n');
     }
-}
-
-int main(void) 
-{
-    int n;
-    if (scanf("%d", &n) != 1) return 1;
-    if (n <= 0) return 0;
-    yc(n);
-    return 0;
 }

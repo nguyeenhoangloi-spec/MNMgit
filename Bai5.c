@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int tinhTienDien(int soDien) {
@@ -8,12 +9,4 @@ int tinhTienDien(int soDien) {
     } else {
         return 100 * 500 + 250 * 550 + (soDien - 350) * 650;
     }
-}
-
-int main() {
-    int soDien;
-    printf("Nhap so dien: ");
-    scanf("%d", &soDien);
-    printf("Tien dien la: %d VND\n", tinhTienDien(soDien));
-    return 0;
 }
