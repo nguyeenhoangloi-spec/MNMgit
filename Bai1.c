@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-void inSoNgayTrongThang() {
+int main() {
     int thang;
-    printf("Nhap thang: ");
+
+    printf("Nhap thang (1-12): ");
     scanf("%d", &thang);
 
     switch (thang) {
@@ -13,9 +14,12 @@ void inSoNgayTrongThang() {
             printf("Thang %d co 30 ngay\n", thang);
             break;
         case 2:
-            printf("Thang 2 co 28 ngay (khong tinh nam nhuan)\n");
+            printf("Thang 2 co 28 ngay (hoac 29 ngay neu nam nhuan)\n");
             break;
         default:
             printf("Thang khong hop le!\n");
+            break;
     }
+
+    return 0;
 }
