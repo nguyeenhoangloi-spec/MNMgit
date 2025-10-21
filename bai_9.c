@@ -14,7 +14,6 @@ void nhapdayso(int n)
         
         if (sonhap == i)
         {
-            printf("Dung! Tiep tuc...\n");
             i++;
         }
         else 
