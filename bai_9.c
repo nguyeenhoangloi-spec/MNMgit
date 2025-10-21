@@ -1,16 +1,19 @@
 #include <stdio.h>
 
-void nhapTuanTu(int n) {
+void nhapTuanTu(int n) 
+{
     int soNhap;
     int i = 1;
     
     printf("Hay nhap cac so tu 1 den %d theo thu tu:\n", n);
     
-    while (i <= n) {
+    while (i <= n) 
+    {
         printf("Nhap so thu %d: ", i);
         scanf("%d", &soNhap);
         
-        if (soNhap == i) {
+        if (soNhap == i)
+        {
             printf("Dung! Tiep tuc...\n");
             i++;
         } else {
@@ -23,13 +26,15 @@ void nhapTuanTu(int n) {
     printf("\nChuc mung! Ban da nhap dung toan bo tu 1 den %d!\n", n);
 }
 
-int main() {
+int main() 
+{
     int n;
     
     printf("Nhap gia tri n: ");
     scanf("%d", &n);
     
-    if (n <= 0) {
+    if (n <= 0) 
+    {
         printf("Gia tri n phai lon hon 0!\n");
         return 1;
     }
