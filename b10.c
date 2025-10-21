@@ -1,5 +1,5 @@
     #include <stdio.h>
-	void print_fib_less_than(long long n) 
+	void fibonacci_nho(long long n) 
     {
 		if (n <= 0) return;
 		unsigned long long a = 0, b = 1;
@@ -23,7 +23,7 @@
         {
 			return 1;
 		}
-		print_fib_less_than(n);
+		fibonacci_nho(n);
 		return 0;
 	}
 
