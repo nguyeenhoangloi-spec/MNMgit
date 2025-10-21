@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void nhapTuanTu(int n) 
+void nhapdayso(int n) 
 {
-    int soNhap;
+    int sonhap;
     int i = 1;
     
     printf("Hay nhap cac so tu 1 den %d theo thu tu:\n", n);
@@ -10,16 +10,18 @@ void nhapTuanTu(int n)
     while (i <= n) 
     {
         printf("Nhap so thu %d: ", i);
-        scanf("%d", &soNhap);
+        scanf("%d", &sonhap);
         
-        if (soNhap == i)
+        if (sonhap == i)
         {
             printf("Dung! Tiep tuc...\n");
             i++;
-        } else {
-            printf("Sai! So ban nhap la %d nhung phai la %d.\n", soNhap, i);
+        }
+        else 
+        {
+            printf("Sai! So ban nhap la %d nhung phai la %d.\n", sonhap, i);
             printf("Bat dau lai tu dau!\n\n");
-            i = 1; // Bắt đầu lại từ đầu
+            i = 1;
         }
     }
     
@@ -39,7 +41,7 @@ int main()
         return 1;
     }
     
-    nhapTuanTu(n);
+    nhapdayso(n);
     
     return 0;
 }
